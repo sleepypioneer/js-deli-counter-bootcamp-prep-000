@@ -3,7 +3,7 @@ var katzDeli = [];
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name)
   var a = katzDeliLine.indexOf(name)
-  return "Welcome, " + name + " you are number " + (parseInt(a)+1) + " in the line."
+  return "Welcome, " + name + ". You are number " + (parseInt(a)+1) + " in line."
 }
 
 function nowServing(katzDeliLine){
