@@ -9,11 +9,11 @@ function takeANumber(katzDeliLine, name){
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0 ){
     let message = "Now serving " + katzDeliLine[0];
+    katzDeliLine.shift();
+    return message
   } else {
-    let message = "There is nobody waiting to be served!";
+    return "There is nobody waiting to be served!";
   }
-  katzDeliLine.shift();
-  return message
 }
 
 function currentLine(katzDeliLine){
